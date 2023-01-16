@@ -10,9 +10,82 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="556dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="276dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/num2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Número 1" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Número 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="calculate"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/sub"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="calculate"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/mul"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="calculate"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@+id/div"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="calculate"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
